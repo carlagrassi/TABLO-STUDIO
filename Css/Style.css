@@ -72,7 +72,6 @@ h5{
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
-    background-color: grey;
 }
 
 .header nav ul {
@@ -90,44 +89,19 @@ h5{
     color: white;
 }
 
-.flex-container {
-    font-family: "Supply";
-    font-style: normal;
-    font-size: 36px;
-    padding: 50px;
-    display: flex;
-    flex direction: row;
-}
-    
-.tabla__txtDer {
-    font-family: "Supply";
-    font-style: normal; 
-    font-size: 16px;
-    padding: 20px;
-    text-align: left;
-}    
-    
-.tabla__txtCen {
-    font-family: "Supply";
-    font-style: normal; 
-    font-size: 16px;
-    padding: 20px;
-    text-align: left;
-}
-
-.tabla__txtIzq {
-	font-family: "Supply";
-    font-style: normal; 
-    font-size: 16px;
-    padding-right: 20px;;
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem;
     text-align: left;
 }
 
 .hero {
     width: 100%;
-    height: 500px;
+    height: 90vh;
     background-image: url(./Img/Foto\ Inicio.jpg);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -136,47 +110,39 @@ h5{
 }
 
 .contenedor-vidriera {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+    padding: 2rem;
 }
 
 .grid-vidriera {
     display: grid;
-    grid: 500px 500px / repeat(3, 400px);
-    gap: 30px;
-    padding-left: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
 }
 
-.grid-vidriera .img-vidriera  {
-    position: relative;
-}
-
-.grid-vidriera .img-vidriera img {
+.cajita img{
+    width: 100%;
     border-radius: 20px;
-    width: 300px;
-    height: 300px;
-    justify-self: center;
 }
 
-.p {
+
+
+/* .p {
     height: 500px;
     width: 500px;
     font-size: 16px;
     color:#222E40;
     padding: 10px;
     flex-wrap: wrap;
-
-}
+} */
 /* ---------- Footer ------------- */
 
 .footer{
     display: flex;
     justify-content: space-around;
-    background-color: green;
     align-items: flex-start;
     padding: 2rem;
+    background-color: #222E40;
 }
 
 .footer ol{
@@ -262,6 +228,7 @@ input[type=submit] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
+    gap: 2rem;
 }
 
 .ContainerPortfolio{
@@ -270,12 +237,69 @@ input[type=submit] {
     align-items: center;
 }
 
+.containerForm{
+    margin: 0 auto;
+}
+
+.sectionForm{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* .mainTeam{
+    display: flex;
+    flex-wrap: wrap;
+
+} */
+
+.sectionTeam{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.divTeam{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+
+.divTeam img{
+    width: 300px;
+    height: 300px;
+
+}
+
+.sectionProcess{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.divTeam{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+}
+
+.divTeam p {
+    width: 300px;
+}
+
+
 /* ------------- Media queries--------------- */
 
 @media (max-width: 950px){
     .grilla {
-        grid-template-columns: 1fr, 1fr;
         display: grid;
+        grid-template-columns: 1fr 1fr;
     
     }
 }
@@ -290,10 +314,39 @@ input[type=submit] {
         align-items: center;
         gap: 2rem;
     }
+
+}
+
+@media (max-width: 620px){
+    .grilla {
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    .servicios{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .servicios p{
+        max-width: 100%;
+
+    }
+
+    .grid-vidriera {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width:420px) {
     .header nav ul{
         flex-direction: column;
+    }
+
+    .divTeam{
+        width: 100%;
+    }
+
+    .divTeam img{
+        width: 100%;
     }
 }
