@@ -7,20 +7,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="preconnect" href="Css/Font Supply/Supply-Regular.otf">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
     <link rel="stylesheet" href="/Css/Style.css">
 </head>
 
 <body>
-    <header class="header">
-        <img src="./Css/Img/logo tabló-8.png" alt="logo tabló" />
-        <nav>
-            <ul>
-                <li><a href="/Index.html">Home</a></li>
-                <li><a href="/Team.html">Team</a></li>
-                <li><a href="/Portfolio.html">Portfolio</a></li>
-                <li><a href="/Process.html">Process</a></li>
-                <li> <a href="/Contact.html">Contact</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light headerback">
+            <!-- <div class="container-fluid"> -->
+            <nav class="navbar bg-light headerboot">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/Css/Img/logo tabló-8.png">
+                    </a>
+                </div>
+            </nav>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 headerboot">
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" aria-current="page" href="./Process.html">Process</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Team.html">Team</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Contact.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Action</a></li>
+					  <li><a class="dropdown-item" href="#">Another action</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				  </li> -->
+                <!-- <li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				  </li>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form> -->
+                <!-- </div> -->
             </ul>
+            <!-- </div> -->
         </nav>
     </header>
 
@@ -31,7 +74,7 @@
         <section class="servicios">
             <div>
                 <p>Tabló Studio is a full service digital experience studio. We work with
-                bold, forward thinking brands to make experiences as impactful as the brands they are for.
+                    bold, forward thinking brands to make experiences as impactful as the brands they are for.
                 </p>
             </div>
             <div>
@@ -45,8 +88,8 @@
                 <p>For enquiries, contact us at hello@tablostudio.com</p>
             </div>
         </section>
-        <section class="contenedor-vidriera">
-            <div class="grid-vidriera">
+        <section>
+            <!-- <div class="grid-vidriera">
                 <div class="cajita">
                     <img src="./Css/Img/mockup-yofi-brandbook.jpg" alt="Branding Yofi Touch" />
                     <h2>BRANDING</h2>
@@ -59,6 +102,22 @@
                     <img src="./Css/Img/Logo1-Application-BuralForm.jpg" alt="Branding Holocene" />
                     <h2>DIGITAL DESIGN</h2>
                 </div>
+            </div> -->
+            <div class="container text-center contenedor-vidriera">
+                <div class="row grid-vidriera">
+                    <div class="col cajita">
+                        <img src="./Css/Img/mockup-yofi-brandbook.jpg" alt="Branding Yofi Touch" />
+                        <h2>BRANDING</h2>
+                    </div>
+                    <div class="col cajita">
+                        <img src="./Css/Img/mockup-carte visite- holocene copy.jpg" alt="Branding Holocene" />
+                        <h2>WEB DESIGN</h2>
+                    </div>
+                    <div class="col cajita">
+                        <img src="./Css/Img/Logo1-Application-BuralForm.jpg" alt="Branding Holocene" />
+                        <h2>DIGITAL DESIGN</h2>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -68,15 +127,12 @@
             <li> <a href="">Facebook</a></li>
             <li> <a href="">LinkedIn</a></li>
         </ol>
-        <div class="newsletter">
-            <h3>Suscribe<h3>
-                    <form>
-                        <input type="text" placehold="You email" required>
-                        <br>
-                        <button type="submit">SUBMIT</button>
-                    </form>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Suscribe to our newsletter</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
     </footer>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

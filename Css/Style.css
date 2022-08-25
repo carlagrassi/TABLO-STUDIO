@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"Supply" ;
+    font-family: "Supply";
     src: url("../Css/Font/Supply/Supply-Regular.otf");
 }
 
@@ -8,11 +8,12 @@
     src: url("../Css/Font/AcuminVariableConcept.otf");
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Acumin";
+
 }
 
 body {
@@ -31,14 +32,14 @@ h1 {
     padding: 50px;
 }
 
-h2{
+h2 {
     color: #222E40;
     text-align: left;
     font-size: 30px;
     font-family: "Supply";
 }
 
-h3{
+h3 {
     color: #222E40;
     text-align: left;
     font-size: 16px;
@@ -47,14 +48,14 @@ h3{
     display: inline;
 }
 
-h4{
+h4 {
     color: #222E40;
     text-align: left;
     font-size: 36px;
     font-family: "Supply";
 }
 
-h5{
+h5 {
     color: #222E40;
     text-align: center;
     font-size: 40px;
@@ -72,6 +73,7 @@ h5{
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+
 }
 
 .header nav ul {
@@ -79,17 +81,35 @@ h5{
     list-style: none;
 }
 
-.header nav ul li a{
+.header nav ul li a {
     text-decoration: none;
     padding: 1rem;
     color: #222E40;
 }
 
-.header nav ul li a:hover{
+.header nav ul li a:hover {
     color: white;
 }
 
-.servicios{
+
+/* ------------header bootstrap ------------- */
+
+.headerboot {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.headerback {
+    background-color: none;
+    align-items: center;
+}
+
+
+
+.servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -120,7 +140,7 @@ h5{
 
 }
 
-.cajita img{
+.cajita img {
     width: 100%;
     border-radius: 20px;
 }
@@ -137,29 +157,39 @@ h5{
 } */
 /* ---------- Footer ------------- */
 
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 2rem;
     background-color: #222E40;
+    font: white;
 }
 
-.footer ol{
+.footer ol {
     display: flex;
     list-style: none;
     text-decoration: none;
 
 }
 
-.footer ol li a{
+.footer ol li a {
     text-decoration: none;
     padding: 1rem;
     color: white;
+    font-family: "Supply";
+    font-size: 16px;
+    padding: 2rem;
 }
 
+/* ---- footer bootstrap --------- */
 
-
+.footer div label {
+    color: white;
+    font-family: "Supply";
+    font-size: 16px;
+    padding: 1rem;
+}
 
 form input {
     width: 300px;
@@ -171,32 +201,34 @@ form input {
     outline: none;
 }
 
-form button{
+form button {
     width: 100px;
     height: 45px;
-    background:transparent;
+    background: transparent;
     border: 2px solid white;
-    color:white;
+    color: white;
     border-radius: 50px;
-    padding: 30 px,30px;
+    padding: 30 px, 30px;
     font-size: 16px;
     cursor: pointer;
 }
 
-input[type=text], select, textarea {
-    width: 300px; 
-    padding: 12px; 
-    border: 1px solid white; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 6px; 
+input[type=text],
+select,
+textarea {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
     resize: vertical;
     display: flex;
     flex-direction: column;
     text-align: left;
 
-  }
+}
 
 input[type=submit] {
     background-color: #222E40;
@@ -209,13 +241,13 @@ input[type=submit] {
 }
 
 .ContenedorPortfolio {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20px;
-      }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
 
 .grid-gallery {
     display: grid;
@@ -224,7 +256,7 @@ input[type=submit] {
     width: 100%;
 }
 
-.grilla{
+.grilla {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1000px;
@@ -232,26 +264,26 @@ input[type=submit] {
 
 }
 
-.grilla div img{
+.grilla div img {
     opacity: 0.7;
 }
 
-.grilla div img:hover{
-    transform: scale(1.1); 
+.grilla div img:hover {
+    transform: scale(1.1);
     opacity: 1;
 }
 
-.ContainerPortfolio{
+.ContainerPortfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.containerForm{
+.containerForm {
     margin: 0 auto;
 }
 
-.sectionForm{
+.sectionForm {
     display: flex;
     justify-content: center;
 
@@ -263,7 +295,7 @@ input[type=submit] {
 
 } */
 
-.sectionTeam{
+.sectionTeam {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -271,20 +303,20 @@ input[type=submit] {
     flex-wrap: wrap;
 }
 
-.divTeam{
+.divTeam {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 300px;
 }
 
-.divTeam img{
+.divTeam img {
     width: 300px;
     height: 300px;
 
 }
 
-.sectionProcess{
+.sectionProcess {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -292,14 +324,14 @@ input[type=submit] {
     flex-wrap: wrap;
 }
 
-.divTeam{
+.divTeam {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     max-width: 300px;
 }
 
-.divTeam img{
+.divTeam img {
     animation-name: animacion;
     animation-iteration-count: initial;
     animation-duration: 2s;
@@ -310,23 +342,25 @@ input[type=submit] {
 }
 
 /* -----------animaciones-------------- */
-@keyframes animacion{
-    
-    0%{
-        border-radius:  5px;
+@keyframes animacion {
+
+    0% {
+        border-radius: 5px;
     }
 
-    25%{
+    25% {
         border-radius: 25px;
     }
 
-    50%{
+    50% {
         border-radius: 50px;
     }
-    75%{
+
+    75% {
         border-radius: 40%;
     }
-    100%{
+
+    100% {
         border-radius: 50%;
     }
 }
@@ -339,20 +373,20 @@ input[type=submit] {
 
 /* ------------- Media queries--------------- */
 
-@media (max-width: 950px){
+@media (max-width: 950px) {
     .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    
+
     }
 }
 
-@media (max-width: 770px){
-    .header{
+@media (max-width: 770px) {
+    .header {
         flex-direction: column;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
@@ -360,17 +394,19 @@ input[type=submit] {
 
 }
 
-@media (max-width: 620px){
+@media (max-width: 620px) {
     .grilla {
         display: grid;
         grid-template-columns: 1fr;
-    
+
     }
-    .servicios{
+
+    .servicios {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    .servicios p{
+
+    .servicios p {
         max-width: 100%;
 
     }
@@ -381,15 +417,15 @@ input[type=submit] {
 }
 
 @media (max-width:420px) {
-    .header nav ul{
+    .header nav ul {
         flex-direction: column;
     }
 
-    .divTeam{
+    .divTeam {
         width: 100%;
     }
 
-    .divTeam img{
+    .divTeam img {
         width: 100%;
     }
 }
