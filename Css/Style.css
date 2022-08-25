@@ -107,7 +107,32 @@ h5 {
     align-items: center;
 }
 
+/* ----- process bootstrap ------- */
+.processGrid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
 
+.processCard {
+   width: 500px;
+   padding: 30px;
+   background-color: #f6f6f6;
+}
+
+.processCard img {
+    display: flex;
+    width: 300px;
+    height: 300px;
+
+}
+
+.processbutton{
+    background-color: #222E40;
+    border-color: #222E40;
+}
 
 .servicios {
     display: grid;

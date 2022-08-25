@@ -7,25 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Process</title>
     <link rel="preconnect" href="Css/Font Supply/Supply-Regular.otf">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
     <link rel="stylesheet" href="/Css/Style.css">
 </head>
 
 <body>
-    <header class="header">
-        <img src="./Css/Img/logo tabló-8.png" alt="logo tabló" />
-        <nav>
-            <ul>
-                <li><a href="/Index.html">Home</a></li>
-                <li><a href="/Team.html">Team</a></li>
-                <li><a href="/Portfolio.html">Portfolio</a></li>
-                <li><a href="/Process.html">Process</a></li>
-                <li> <a href="/Contact.html">Contact</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light headerback">
+            <!-- <div class="container-fluid"> -->
+            <nav class="navbar bg-light headerboot">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="/Css/Img/logo tabló-8.png">
+                    </a>
+                </div>
+            </nav>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span> -->
+            <!-- </button> -->
+            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 headerboot">
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" aria-current="page" href="./Index.html">Home</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" aria-current="page" href="./Process.html">Process</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Team.html">Team</a>
+                </li>
+                <li class="nav-item headerboot">
+                    <a class="nav-link active" href="./Contact.html">Contact</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#">Action</a></li>
+					  <li><a class="dropdown-item" href="#">Another action</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				  </li> -->
+                <!-- <li class="nav-item">
+					<a class="nav-link disabled">Disabled</a>
+				  </li>
+				</ul>
+				<form class="d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-outline-success" type="submit">Search</button>
+				</form> -->
+                <!-- </div> -->
             </ul>
+            <!-- </div> -->
         </nav>
     </header>
 
-    <main class="sectionProcess">
-        <div class="divProcess">
+    <main class="processGrid">
+        <!-- <div class="divProcess">
             <h1>01 Research</h1>
             <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double
                 click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
@@ -38,6 +81,34 @@
                 click me to add your own content and make changes to the font. Feel free to drag and drop me anywhere
                 you like on your page. I’m a great place for you to tell a story and let your users know a little more
                 about you.​</p>
+        </div> -->
+        <div class="card processCard">
+            <img src="./Css/Img/research.jpg" class="card-img-top" alt="Research">
+            <div class="card-body">
+                <h5 class="card-title">01 Research</h5>
+                <p class="card-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
+                    “Edit Text” or double
+                    click me to add your own content and make changes to the font. Feel free to drag and drop me
+                    anywhere
+                    you like on your page. I’m a great place for you to tell a story and let your users know a little
+                    more
+                    about you.</p>
+                <a href="#" class="btn btn-primary processbutton">Read more</a>
+            </div>
+        </div>
+        <div class="card processCard">
+            <img src="./Css/Img/strategy.jpg" class="card-img-top" alt="Strategy">
+            <div class="card-body">
+                <h5 class="card-title">02 Strategy</h5>
+                <p class="card-text">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click
+                    “Edit Text” or double
+                    click me to add your own content and make changes to the font. Feel free to drag and drop me
+                    anywhere
+                    you like on your page. I’m a great place for you to tell a story and let your users know a little
+                    more
+                    about you.</p>
+                <a href="#" class="btn btn-primary processbutton">Read more</a>
+            </div>
         </div>
     </main>
 
@@ -47,16 +118,12 @@
             <li> <a href="">Facebook</a></li>
             <li> <a href="">LinkedIn</a></li>
         </ol>
-        <div class="newsletter">
-            <h3>Suscribe<h3>
-                    <form>
-                        <input type="text" placehold="You email" required>
-                        <br>
-                        <button type="submit">SUBMIT</button>
-                    </form>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Suscribe to our newsletter</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
     </footer>
-
+    <script src="./Js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
