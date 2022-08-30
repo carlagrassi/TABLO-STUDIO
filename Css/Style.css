@@ -89,32 +89,22 @@ h5 {
 
 .header nav ul li a:hover {
     color: white;
-} */
-
-
-/* ------------header bootstrap ------------- */
-
-/* .headerboot {
-    display: flex;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-.headerback {
-    background-color: none;
-    align-items: center;
-} */
+/* ----------team ------------ */
 
-/* ----- process bootstrap ------- */
-.processGrid{
-    display: flex;
-    flex-wrap: wrap;
+.cardcontainer div {
     justify-content: center;
-    gap: 20px;
-    padding: 50px;
+    align-items: center;
+
 }
+
+.cardcontainer div div{
+    text-align: center;
+
+}
+
+/* ------- process ------------ */
 
 .processCard {
    width: 500px;
@@ -320,7 +310,7 @@ textarea {
 
 } */
 
-.sectionTeam {
+/* .sectionTeam {
     display: flex;
     justify-content: center;
     gap: 3rem;
@@ -339,7 +329,7 @@ textarea {
     width: 300px;
     height: 300px;
 
-}
+} */
 
 .sectionProcess {
     display: flex;
