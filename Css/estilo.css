@@ -1,0 +1,52 @@
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center; }
+  .cardcontainer .tarjetita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }
+  .cardcontainer .card {
+    width: 400px; }
+  .cardcontainer .card img {
+    width: 100%;
+    height: 400px; }
+
+h5 {
+  color: #222E40;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  font-family: "Supply"; }
+
+@font-face {
+  font-family: "Supply";
+  src: url("../Css/Font/Supply/Supply-Regular.otf"); }
+
+body {
+  background: linear-gradient(to bottom, #fde7ea, #fdefda); }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #222E40;
+  font: white; }
+  .footer ol {
+    display: flex;
+    list-style: none;
+    text-decoration: none; }
+  .footer li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    font-family: "Supply";
+    font-size: 16px;
+    padding: 2rem; }
+  .footer div label {
+    color: white;
+    font-family: "Supply";
+    font-size: 16px;
+    padding: 1rem; }
