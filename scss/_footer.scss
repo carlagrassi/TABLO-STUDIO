@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
+    background-color: #222E40;
+    font: white;
+
+    ol {
+        display: flex;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    li a {
+        text-decoration: none;
+        padding: 1rem;
+        color: white;
+        font-family: "supply";
+        font-size: 16px;
+        padding: 2rem;
+    }
+
+    div label {
+        color: white;
+        font-family: "supply";
+        font-size: 16px;
+        padding: 1rem;
+    }
+
+    div input {
+        width: 300px;
+        padding: 12px;
+        border: 1px solid white;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        resize: vertical;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+}

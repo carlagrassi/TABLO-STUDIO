@@ -1,0 +1,34 @@
+.contactform {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 2rem;
+    
+    .row {
+        width: 500px;
+
+        input {
+            border: none;
+        }
+        
+        textarea{
+            border: none;
+        }
+
+        label{
+            color: #222E40;
+            font-size: 16px;
+            font-family: "supply";
+        }
+
+        div button {
+            background-color: #222E40;
+            border:none;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            font-family: "acumin";
+            margin-top: 30px;
+
+        }
+    }
+}

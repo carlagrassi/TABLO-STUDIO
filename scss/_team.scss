@@ -1,0 +1,38 @@
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+
+    .tarjetita {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .card {
+            width: 400px;
+
+            img {
+                width: 100%;
+                height: 400px;
+            }
+
+            .btn {
+                background-color: #222E40;
+                border: #222E40;
+                color: white;
+                border-radius: 5px;
+                font-size: 16px;
+                font-family: "acumin";
+                margin-top: 30px;
+            }
+
+            .btn:hover {
+                background-color: white;
+                color: #222E40;
+                border-color: #222E40;
+            }
+
+        }
+    }
+}

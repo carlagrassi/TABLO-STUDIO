@@ -1,248 +1,47 @@
-@font-face {
-    font-family: "Supply";
-    src: url("../Css/Font/Supply/Supply-Regular.otf");
-}
-
-@font-face {
-    font-family: "Acumin";
-    src: url("../Css/Font/AcuminVariableConcept.otf");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Acumin";
-
-}
-
-body {
-    background: linear-gradient(to bottom, #fde7ea, #fdefda);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: "Acumin";
-    font-size: 16px;
-}
-
-h1 {
-    color: #222E40;
-    text-align: left;
-    font-size: 36px;
-    font-family: "Supply";
-    padding: 50px;
-}
-
-h2 {
-    color: #222E40;
-    text-align: left;
-    font-size: 30px;
-    font-family: "Supply";
-}
-
-h3 {
-    color: #222E40;
-    text-align: left;
-    font-size: 16px;
-    font-family: "Acumin";
-    padding: 20px;
-    display: inline;
-}
-
-h4 {
-    color: #222E40;
-    text-align: left;
-    font-size: 36px;
-    font-family: "Supply";
-}
-
-h5 {
-    color: #222E40;
-    text-align: center;
-    font-size: 40px;
-    font-family: "Supply";
-    padding: 50px;
-}
-
-/* ---------- Header -------------- */
-/* .header img {
-    width: 300px;
-} */
-/* 
-.header {
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem; }
+  .navbar .container-fluid {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-
-}
-
-.header nav ul {
-    display: flex;
-    list-style: none;
-}
-
-.header nav ul li a {
-    text-decoration: none;
-    padding: 1rem;
-    color: #222E40;
-}
-
-.header nav ul li a:hover {
-    color: white;
-}
-
-/* ----------team ------------ */
-.card {
-    width: 400px;
-}
-
-.card img{
-
-    width: 100%;
-    height: 400px;
-}
-
-.cardcontainer {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    align-items: center;
-}
-
-.tarjetita{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-
-}
-/* ------- process ------------ */
-
-.processCard {
-   width: 500px;
-   padding: 30px;
-   background-color: #f6f6f6;
-}
-
-.processCard img {
-    display: flex;
-    width: 300px;
-    height: 300px;
-
-}
-
-.processbutton{
-    background-color: #222E40;
-    border-color: #222E40;
-}
-
-.servicios {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    padding: 1rem;
-    text-align: left;
-}
-
-.hero {
-    width: 100%;
-    height: 90vh;
-    background-image: url(./Img/Foto\ Inicio.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenedor-vidriera {
-    padding: 2rem;
-}
-
-.grid-vidriera {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-
-}
-
-.cajita img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-
-
-/* .p {
-    height: 500px;
-    width: 500px;
-    font-size: 16px;
-    color:#222E40;
-    padding: 10px;
-    flex-wrap: wrap;
-} */
-/* ---------- Footer ------------- */
+    width: vw; }
+    .navbar .container-fluid .navbar-nav {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      padding: 1rem;
+      color: #222E40; }
+      .navbar .container-fluid .navbar-nav .nav-item {
+        width: vw; }
+        .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+          padding: 1rem; }
+        .navbar .container-fluid .navbar-nav .nav-item .nav-link:hover {
+          color: white; }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 2rem;
-    background-color: #222E40;
-    font: white;
-}
-
-.footer ol {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #222E40;
+  font: white; }
+  .footer ol {
     display: flex;
     list-style: none;
-    text-decoration: none;
-
-}
-
-.footer ol li a {
+    text-decoration: none; }
+  .footer li a {
     text-decoration: none;
     padding: 1rem;
     color: white;
-    font-family: "Supply";
+    font-family: "supply";
     font-size: 16px;
-    padding: 2rem;
-}
-
-/* ---- footer bootstrap --------- */
-
-.footer div label {
+    padding: 2rem; }
+  .footer div label {
     color: white;
-    font-family: "Supply";
+    font-family: "supply";
     font-size: 16px;
-    padding: 1rem;
-}
-
-
-.containerForm form input {
-    width: 300px;
-    height: 45px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    outline: none;
-}
-
-.containerForm form button {
-    width: 100px;
-    height: 45px;
-    background: transparent;
-    border: 2px solid white;
-    color: white;
-    border-radius: 50px;
-    padding: 30 px, 30px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.containerForm input[type=text],
-select,
-textarea {
+    padding: 1rem; }
+  .footer div input {
     width: 300px;
     padding: 12px;
     border: 1px solid white;
@@ -253,206 +52,213 @@ textarea {
     resize: vertical;
     display: flex;
     flex-direction: column;
-    text-align: left;
+    text-align: left; }
 
-}
+.hero {
+  width: 100%;
+  height: 90vh;
+  background-image: url(/assets/img/fotoinicio.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
-.containerForm input[type=submit] {
-    background-color: #222E40;
-    font-size: 16px;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+  text-align: left;
+  font-family: "acumin"; }
+
+.contenedor-vidriera {
+  padding: 2rem; }
+
+.grid-vidriera {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+
+.cajita img {
+  width: 100%;
+  border-radius: 20px; }
 
 .ContenedorPortfolio {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px; }
 
 .grid-gallery {
-    display: grid;
-    grid-template-columns: repeat (3, 1fr) !important;
-    gap: 30px;
-    width: 100%;
-}
+  display: grid;
+  grid-template-columns: repeat 3, 1fr !important;
+  gap: 30px;
+  width: 100%; }
 
 .grilla {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 1000px;
-    gap: 2rem;
-
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  gap: 2rem; }
 
 .grilla div img {
-    opacity: 0.7;
-}
+  opacity: 0.7; }
 
 .grilla div img:hover {
-    transform: scale(1.1);
-    opacity: 1;
-}
+  transform: scale(1.1);
+  opacity: 1; }
 
 .ContainerPortfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
-.containerForm {
-    margin: 0 auto;
-}
-
-.sectionForm {
-    display: flex;
-    justify-content: center;
-
-}
-
-/* .mainTeam{
-    display: flex;
-    flex-wrap: wrap;
-
-} */
-
-/* .sectionTeam {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.divTeam {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 300px;
-}
-
-.divTeam img {
-    width: 300px;
-    height: 300px;
-
-} */
-
-.sectionProcess {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-    padding: 2rem;
-    flex-wrap: wrap;
-}
-
-.divTeam {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 300px;
-}
-
-.divTeam img {
-    animation-name: animacion;
-    animation-iteration-count: initial;
-    animation-duration: 2s;
-}
-
-.divTeam p {
-    width: 300px;
-}
-
-/* -----------animaciones-------------- */
-@keyframes animacion {
-
-    0% {
+.processGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem; }
+  .processGrid .card {
+    width: 500px;
+    padding: 30px;
+    background-color: #f6f6f6; }
+    .processGrid .card img {
+      height: 300px;
+      text-align: center; }
+    .processGrid .card .card-body {
+      flex-wrap: wrap; }
+      .processGrid .card .card-body .card-text {
+        padding-bottom: 2rem; }
+      .processGrid .card .card-body .btn {
+        background-color: #222E40;
+        border-color: #222E40;
+        color: white;
         border-radius: 5px;
-    }
+        font-size: 14px;
+        font-family: "acumin";
+        padding: 1rem; }
 
-    25% {
-        border-radius: 25px;
-    }
-
-    50% {
-        border-radius: 50px;
-    }
-
-    75% {
-        border-radius: 40%;
-    }
-
-    100% {
-        border-radius: 50%;
-    }
-}
-
-
-
-
-
-
-
-/* ------------- Media queries--------------- */
-
-@media (max-width: 950px) {
-    .grilla {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
-    }
-}
-
-@media (max-width: 770px) {
-    /* .header {
-        flex-direction: column;
-    } */
-
-    .footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-    }
-
-}
-
-@media (max-width: 620px) {
-    .grilla {
-        display: grid;
-        grid-template-columns: 1fr;
-
-    }
-
-    .servicios {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    .servicios p {
-        max-width: 100%;
-
-    }
-
-    .grid-vidriera {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width:420px) {
-    /* .header nav ul {
-        flex-direction: column;
-    } */
-
-    .divTeam {
+.cardcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center; }
+  .cardcontainer .tarjetita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; }
+    .cardcontainer .tarjetita .card {
+      width: 400px; }
+      .cardcontainer .tarjetita .card img {
         width: 100%;
-    }
+        height: 400px; }
+      .cardcontainer .tarjetita .card .btn {
+        background-color: #222E40;
+        border: #222E40;
+        color: white;
+        border-radius: 5px;
+        font-size: 16px;
+        font-family: "acumin";
+        margin-top: 30px; }
+      .cardcontainer .tarjetita .card .btn:hover {
+        background-color: white;
+        color: #222E40;
+        border-color: #222E40; }
 
-    .divTeam img {
-        width: 100%;
-    }
-}
+.contactform {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 2rem; }
+  .contactform .row {
+    width: 500px; }
+    .contactform .row input {
+      border: none; }
+    .contactform .row textarea {
+      border: none; }
+    .contactform .row label {
+      color: #222E40;
+      font-size: 16px;
+      font-family: "supply"; }
+    .contactform .row div button {
+      background-color: #222E40;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: "acumin";
+      margin-top: 30px; }
+
+@font-face {
+  font-family: "supply";
+  src: url("/assets/font/supply/supply-Regular.otf"); }
+
+@font-face {
+  font-family: "acumin";
+  src: url("/assets/acuminVariableConcept.otf"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: linear-gradient(to bottom, #fde7ea, #fdefda);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "acumin";
+  font-size: 16px; }
+
+h1 {
+  color: #222E40;
+  text-align: left;
+  font-size: 36px;
+  font-family: "supply";
+  padding: 50px; }
+
+h2 {
+  color: #222E40;
+  text-align: left;
+  font-size: 30px;
+  font-family: "supply"; }
+
+h3 {
+  color: #222E40;
+  text-align: left;
+  font-size: 16px;
+  font-family: "acumin";
+  padding: 20px;
+  display: inline; }
+
+h4 {
+  color: #222E40;
+  text-align: left;
+  font-size: 36px;
+  font-family: "supply"; }
+
+h5 {
+  color: #222E40;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px;
+  font-family: "supply"; }
+
+p {
+  font-family: "acumin";
+  font-size: 16px;
+  color: #222E40;
+  flex-wrap: wrap; }
+
+@keyframes animacion {
+  0% {
+    border-radius: 5px; }
+  25% {
+    border-radius: 25px; }
+  50% {
+    border-radius: 50px; }
+  75% {
+    border-radius: 40%; }
+  100% {
+    border-radius: 50%; } }

@@ -1,0 +1,35 @@
+.processGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+
+    .card {
+        width: 500px;
+        padding: 30px;
+        background-color: #f6f6f6;
+
+        img {
+            height: 300px;
+            text-align: center
+        }
+        .card-body{
+            flex-wrap: wrap;
+            
+            .card-text{
+                padding-bottom: 2rem;
+            }
+
+            .btn {
+                background-color: #222E40;
+                border-color: #222E40;
+                color: white;
+                border-radius: 5px;
+                font-size: 14px;
+                font-family: "acumin";
+                padding: 1rem;
+
+            }
+        }
+    }
+}

@@ -2,27 +2,22 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Contact</title>
-	<link rel="preconnect" href="./Css/Font/Supply/Supply-Regular.otf">
-	<link rel="stylesheet" href="./Css/bootstrap.min.css">
-	<link rel="stylesheet" href="./Css/Style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="preconnect" href="./assets/font/supply/supply-Regular.otf">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-	<header>
-		<nav class="navbar navbar-expand-lg bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="./Css/Img/logotablo.png">
+                    <img src="./assets/img/logotablo.png">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav m-auto mb-2 mb-lg-0 headerboot">
                         <li class="nav-item headerboot">
@@ -40,44 +35,42 @@
                         <li class="nav-item headerboot">
                             <a class="nav-link active" href="./contact.html">Contact</a>
                         </li>
-                        
                     </ul>
-
                 </div>
             </div>
         </nav>
-	</header>
-	<!-- fila de logo + nav -->
-	<main>
-
-		<!-- cierre de fila logo + nav -->
-		<!-- fila de información de mi sitio -->
-		<section>
-			<h5>Let's work together!</h5>
-		</section>
-		<!-- formulario de contacto -->
-		<section class="sectionForm">
-			<div class="containerForm">
-				<form>
-					<label for="fname">Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your name..">
-					<br>
-					<label for="lname">Phone number</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-					<br>
-					<label for="email">Email</label>
-					<input type="text" id="email" name="email" placeholder="Your email...">
-					<br>
-					<label for="subject">Subject</label>
-					<textarea id="subject" name="subject" placeholder="Write something.."
-						style="height:200px"></textarea>
-					<br>
-					<input type="submit" value="Submit">
-				</form>
-			</div>
-		</section>
-	</main>
-	<footer class="footer">
+    </header>
+    <main>
+        <section>
+            <h5>Let's work together!</h5>
+        </section>
+        <!-- formulario de contacto -->
+        <form class="contactform">
+            <div class="row">
+                <div class="col-6">
+                    <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-6">
+                    <label for="exampleFormControlInput1" class="form-label">Last name</label>
+                    <input type="text" class="form-control" placeholder="Last name">
+                </div>
+                <div class="col-12">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
         <ol>
             <li> <a href="">Instagram</a></li>
             <li> <a href="">Facebook</a></li>
@@ -88,7 +81,7 @@
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
         </div>
     </footer>
-	<script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

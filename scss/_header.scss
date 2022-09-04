@@ -1,0 +1,30 @@
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem;
+
+        .container-fluid {
+            display: flex;
+            width: vw;
+
+            .navbar-nav {
+                display: flex;
+                text-decoration: none;
+                list-style: none;
+                padding: 1rem;
+                color: #222E40;
+
+                .nav-item {
+                    width: vw;
+
+                    .nav-link {
+                        padding: 1rem;
+                    }
+
+                    .nav-link:hover {
+                        color: white;
+                    }
+                }
+            } 
+         }
+    }

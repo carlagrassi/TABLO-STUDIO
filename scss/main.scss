@@ -1,0 +1,105 @@
+@import "./header";
+
+@import "./footer";
+
+@import "./home";
+
+@import "./portfolio";
+
+@import "./process";
+
+@import "./team";
+
+@import "./contact";
+
+@font-face {
+    font-family: "supply";
+    src: url("/assets/font/supply/supply-Regular.otf");
+}
+
+@font-face {
+    font-family: "acumin";
+    src: url("/assets/acuminVariableConcept.otf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #fde7ea, #fdefda);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "acumin";
+    font-size: 16px;
+}
+
+h1 {
+    color: #222E40;
+    text-align: left;
+    font-size: 36px;
+    font-family: "supply";
+    padding: 50px;
+}
+
+h2 {
+    color: #222E40;
+    text-align: left;
+    font-size: 30px;
+    font-family: "supply";
+}
+
+h3 {
+    color: #222E40;
+    text-align: left;
+    font-size: 16px;
+    font-family: "acumin";
+    padding: 20px;
+    display: inline;
+}
+
+h4 {
+    color: #222E40;
+    text-align: left;
+    font-size: 36px;
+    font-family: "supply";
+}
+
+h5 {
+    color: #222E40;
+    text-align: center;
+    font-size: 40px;
+    padding: 50px;
+    font-family: "supply";
+}
+
+p {
+    font-family: "acumin";
+    font-size: 16px;
+    color:#222E40;
+    flex-wrap: wrap;
+} 
+
+@keyframes animacion {
+
+    0% {
+        border-radius: 5px;
+    }
+
+    25% {
+        border-radius: 25px;
+    }
+
+    50% {
+        border-radius: 50px;
+    }
+
+    75% {
+        border-radius: 40%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}
