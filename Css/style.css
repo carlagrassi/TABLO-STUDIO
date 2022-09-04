@@ -57,7 +57,7 @@
 .hero {
   width: 100%;
   height: 90vh;
-  background-image: url(/assets/img/fotoinicio.jpg);
+  background-image: url(./assets/img/fotoinicio.jpg);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -177,11 +177,11 @@
 
 @font-face {
   font-family: "supply";
-  src: url("/assets/font/supply/supply-Regular.otf"); }
+  src: url("./assets/font/supply/supply-Regular.otf"); }
 
 @font-face {
   font-family: "acumin";
-  src: url("/assets/acuminVariableConcept.otf"); }
+  src: url("./assets/acuminVariableConcept.otf"); }
 
 * {
   margin: 0;
