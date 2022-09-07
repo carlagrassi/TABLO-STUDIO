@@ -1,3 +1,7 @@
+@import "./variables";
+
+@import "./fonts";
+
 @import "./header";
 
 @import "./footer";
@@ -11,16 +15,6 @@
 @import "./team";
 
 @import "./contact";
-
-@font-face {
-    font-family: "supply";
-    src: url("./assets/font/supply/supply-Regular.otf");
-}
-
-@font-face {
-    font-family: "acumin";
-    src: url("./assets/acuminVariableConcept.otf");
-}
 
 *{
     margin: 0;
@@ -38,7 +32,7 @@ body {
 h1 {
     color: #222E40;
     text-align: left;
-    font-size: 36px;
+    font-size: $titulo-grande;
     font-family: "supply";
     padding: 50px;
 }
@@ -59,20 +53,12 @@ h3 {
     display: inline;
 }
 
-h4 {
-    color: #222E40;
-    text-align: left;
-    font-size: 36px;
-    font-family: "supply";
-}
-
-h5 {
-    color: #222E40;
-    text-align: center;
-    font-size: 40px;
-    padding: 50px;
-    font-family: "supply";
-}
+// h4 {
+//     color: #222E40;
+//     text-align: left;
+//     font-size: 36px;
+//     font-family: "supply";
+// }
 
 p {
     font-family: "acumin";
@@ -103,3 +89,6 @@ p {
         border-radius: 50%;
     }
 }
+
+
+
