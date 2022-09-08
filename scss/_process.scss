@@ -1,6 +1,6 @@
 .processGrid {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 3rem;
 
@@ -8,6 +8,8 @@
         width: 500px;
         padding: 30px;
         background-color: #f6f6f6;
+        margin: 25px;
+        border-radius: $card-border *5;
 
         img {
             height: 300px;
@@ -18,17 +20,20 @@
             
             .card-text{
                 padding-bottom: 2rem;
+                text-align: left;
             }
 
             .btn {
                 background-color: $bg-button;
-                border-color: #222E40;
                 color: white;
+                border-style: none;
                 border-radius: 5px;
                 font-size: 14px;
                 font-family: "acumin";
                 padding: 1rem;
-
+                 &:hover {
+                    background-color: $bg-button-hover;
+                }
             }
         }
     }

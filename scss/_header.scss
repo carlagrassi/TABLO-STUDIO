@@ -19,12 +19,11 @@
 
                     .nav-link {
                         padding: 1rem;
+                    &:hover {
+                        color: $menu-hover;
                     }
-
-                    .nav-link:hover {
-                        color: white;
                     }
-                }
-            } 
-         }
+                } 
+            }
+        }
     }

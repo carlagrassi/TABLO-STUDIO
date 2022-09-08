@@ -19,6 +19,9 @@
         font-family: "supply";
         font-size: 16px;
         padding: 2rem;
+        &:hover {
+            color: $menu-hover;
+        }
     }
 
     div label {
