@@ -2,21 +2,20 @@
     .grilla {
         display: grid;
         grid-template-columns: 1fr 1fr;
-
     }
 }
 
 @media (max-width: 770px) {
-    /* .header {
-        flex-direction: column;
-    } */
-
     .footer {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-    }
 
+        ol li a{
+        font-size: 14px;
+        align-items: center;
+        }
+    }
 }
 
 @media (max-width: 620px) {
@@ -42,15 +41,12 @@
 }
 
 @media (max-width:420px) {
-    .header nav ul {
-        flex-direction: column;
-  
-    }
-    .divTeam {
+    
+    .card {
         width: 100%;
     }
 
-    .divTeam img {
+    .card img {
         width: 100%;
     }
 }
